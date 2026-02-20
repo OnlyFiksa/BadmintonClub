@@ -43,7 +43,7 @@
                 <div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white">
                     <span class="material-symbols-outlined text-xl">sports_tennis</span>
                 </div>
-                <h2 class="text-xl font-bold leading-tight tracking-tight">Klub Badminton</h2>
+                <h2 class="text-xl font-bold leading-tight tracking-tight">Fiksa Badminton Club</h2>
             </div>
             <nav class="hidden md:flex flex-1 justify-center gap-8">
                 <a class="text-primary transition-colors text-sm font-bold" href="/anggota">Daftar Anggota</a>
@@ -56,7 +56,7 @@
     </main>
 
     <footer class="border-t border-border-dark bg-background-dark py-8 px-6 text-center">
-        <p class="text-xs text-text-muted">© <?= date('Y') ?> Sistem Manajemen Klub Badminton.</p>
+        <p class="text-xs text-text-muted">© <?= date('Y') ?> Sistem Manajemen Klub Badminton Fiksa</p>
     </footer>
 
 </body>

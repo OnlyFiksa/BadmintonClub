@@ -45,11 +45,11 @@ class Anggota extends BaseController
         // Ambil file foto
         $fileFoto = $this->request->getFile('foto');
 
-        // Cek apakah tidak ada gambar yang diupload
+        // Cek tidak ada gambar yang diupload
         if ($fileFoto->getError() == 4) {
             $namaFoto = 'default.jpg';
         } else {
-            // Generate nama file random agar tidak bentrok
+            // Generate nama file random
             $namaFoto = $fileFoto->getRandomName();
             // Pindahkan file ke folder public/uploads
             $fileFoto->move('uploads', $namaFoto);
@@ -89,7 +89,7 @@ class Anggota extends BaseController
         $fileFoto = $this->request->getFile('foto');
         $anggotaLama = $this->anggotaModel->find($id);
 
-        // Cek gambar, apakah tetap gambar lama
+        // Cek gambar
         if ($fileFoto->getError() == 4) {
             $namaFoto = $anggotaLama['foto'];
         } else {

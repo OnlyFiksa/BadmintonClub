@@ -26,7 +26,7 @@ class AnggotaSeeder extends Seeder
             ]
         ];
 
-        // Insert ke database
+
         $this->db->table('anggota')->insertBatch($data);
     }
 }
